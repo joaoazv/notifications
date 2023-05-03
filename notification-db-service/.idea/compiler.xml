@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="notification-producer" />
+        <module name="notification-dispatcher" />
+        <module name="notification-db-service" />
+        <module name="notification-receiver" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="notification-db-service" options="-parameters" />
+      <module name="notification-dispatcher" options="-parameters" />
+      <module name="notification-producer" options="-parameters" />
+      <module name="notification-receiver" options="-parameters" />
+    </option>
+  </component>
+</project>

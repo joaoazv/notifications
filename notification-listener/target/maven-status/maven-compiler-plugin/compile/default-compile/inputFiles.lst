@@ -1,0 +1,10 @@
+/Users/itsector/IdeaProjects/notifications/notification-listener/src/main/java/pt/itsector/notification/Application.java
+/Users/itsector/IdeaProjects/notifications/notification-listener/src/main/java/pt/itsector/notification/models/NotificationRequest.java
+/Users/itsector/IdeaProjects/notifications/notification-listener/src/main/java/pt/itsector/notification/services/producer/KafkaProducer.java
+/Users/itsector/IdeaProjects/notifications/notification-listener/src/main/java/pt/itsector/notification/web/NotificationController.java
+/Users/itsector/IdeaProjects/notifications/notification-listener/src/main/java/pt/itsector/notification/services/producer/DefaultKafkaProducer.java
+/Users/itsector/IdeaProjects/notifications/notification-listener/src/main/java/pt/itsector/notification/mappers/AvroSerializer.java
+/Users/itsector/IdeaProjects/notifications/notification-listener/src/main/java/pt/itsector/notification/services/NotificationService.java
+/Users/itsector/IdeaProjects/notifications/notification-listener/src/main/java/pt/itsector/notification/services/DefaultNotificationService.java
+/Users/itsector/IdeaProjects/notifications/notification-listener/src/main/java/pt/itsector/notification/mappers/NotificationMapper.java
+/Users/itsector/IdeaProjects/notifications/notification-listener/target/generated-sources/pt/itsector/notification/avro/AvroNotification.java

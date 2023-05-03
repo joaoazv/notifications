@@ -1,0 +1,12 @@
+/Users/itsector/IdeaProjects/notifications/notification-db-service/src/main/java/pt/itsector/notification/mappers/DBNotificationMapper.java
+/Users/itsector/IdeaProjects/notifications/notification-db-service/src/main/java/pt/itsector/notification/Application.java
+/Users/itsector/IdeaProjects/notifications/notification-db-service/src/main/java/pt/itsector/notification/mappers/AvroSerializer.java
+/Users/itsector/IdeaProjects/notifications/notification-db-service/src/main/java/pt/itsector/notification/repository/NotificationRepository.java
+/Users/itsector/IdeaProjects/notifications/notification-db-service/src/main/java/pt/itsector/notification/mappers/BaseMapper.java
+/Users/itsector/IdeaProjects/notifications/notification-db-service/src/main/java/pt/itsector/notification/mappers/AvroDeserializer.java
+/Users/itsector/IdeaProjects/notifications/notification-db-service/src/main/java/pt/itsector/notification/models/DBNotification.java
+/Users/itsector/IdeaProjects/notifications/notification-db-service/target/generated-sources/pt/itsector/notification/avro/AvroNotificationResult.java
+/Users/itsector/IdeaProjects/notifications/notification-db-service/src/main/java/pt/itsector/notification/models/NotificationRequest.java
+/Users/itsector/IdeaProjects/notifications/notification-db-service/src/main/java/pt/itsector/notification/models/Status.java
+/Users/itsector/IdeaProjects/notifications/notification-db-service/target/generated-sources/pt/itsector/notification/avro/AvroNotification.java
+/Users/itsector/IdeaProjects/notifications/notification-db-service/src/main/java/pt/itsector/notification/services/DefaultNotificationService.java

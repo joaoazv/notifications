@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0" />
+    <title>Notifications - Admin Dashboard</title>
+
+    <link rel="stylesheet"
+          href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+          crossorigin="anonymous">
+</head>
+
+<body>
+
+<div class="container-fluid" style="max-width: 900px;">
+    <h2 class="text-center">Notifications</h2>
+
+    <div class="" th:unless="${notifications.size() > 0}">
+        <span>No notifications found!</span>
+    </div>
+
+    <div th:if="${notifications.size() > 0}">
+        <table class="table table-hover table-responsive-xl">
+            <thead class="thead-dark">
+            <tr>
+                <th scope="col">Id</th>
+                <th scope="col">Notification ID</th>
+                <th scope="col">Status</th>
+                <th scope="col">Creation Date</th>
+                <th scope="col">Sending Date</th>
+                <!--<th scope="col">Actions</th>-->
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="notif : ${notifications}">
+                <th scope="row">[[${notif.id}]]</th>
+                <td>[[${notif.notificationId}]]</td>
+                <td>[[${notif.status}]]</td>
+                <td>[[${notif.creationDateTime}]]</td>
+                <td>[[${notif.sendingDateTime}]]</td>
+                <!--<td>
+                    <a th:href="@{'/tutorials/' + ${tutorial.id}}" title="Edit this tutorial"
+                       class="fa-regular fa-pen-to-square icon-dark"></a>
+
+                    <a th:href="@{'/tutorials/delete/' + ${tutorial.id}}" th:tutorialTitle="${tutorial.title}" id="btnDelete"
+                       title="Delete this tutorial" class="fa-regular fa-trash-can icon-dark btn-delete"></a>
+                </td>-->
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+</html>

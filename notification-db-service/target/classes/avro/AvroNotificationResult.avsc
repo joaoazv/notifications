@@ -1,0 +1,31 @@
+{
+  "name": "AvroNotificationResult",
+  "type": "record",
+  "namespace": "pt.itsector.notification.avro",
+  "fields": [
+    {
+      "name": "notificationId",
+      "type": "string"
+    },
+    {
+      "name": "status",
+      "type": "int"
+    },
+    {
+      "name": "statusMessage",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    },
+    {
+      "name": "sendingDateTime",
+      "type": [
+        "null",
+        "string"
+      ],
+      "default": null
+    }
+  ]
+}
