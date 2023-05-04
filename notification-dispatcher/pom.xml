@@ -22,7 +22,15 @@
     <spring-kafka.version>2.8.2</spring-kafka.version>
     <avro.version>1.8.2</avro.version>
     <kafka-clients.version>3.1.0</kafka-clients.version>
+    <confluent.version>5.0.0</confluent.version>
   </properties>
+
+  <repositories>
+    <repository>
+      <id>confluent</id>
+      <url>https://packages.confluent.io/maven/</url>
+    </repository>
+  </repositories>
 
   <dependencies>
     <!-- spring-boot -->
@@ -59,16 +67,15 @@
       <artifactId>avro</artifactId>
       <version>${avro.version}</version>
     </dependency>
+    <dependency>
+      <groupId>io.confluent</groupId>
+      <artifactId>kafka-avro-serializer</artifactId>
+      <version>${confluent.version}</version>
+    </dependency>
     <!-- lombok -->
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-    </dependency>
-
-    <dependency>
-      <groupId>javax.xml.bind</groupId>
-      <artifactId>jaxb-api</artifactId>
-      <version>2.3.0</version>
     </dependency>
   </dependencies>
 

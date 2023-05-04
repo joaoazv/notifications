@@ -3,41 +3,10 @@
   "type": "record",
   "namespace": "pt.itsector.notification.avro",
   "fields": [
-    {
-      "name": "notificationId",
-      "type": "string"
-    },
-    {
-      "name": "destination",
-      "type": "string"
-    },
-    {
-      "name": "subject",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "message",
-      "type": "string"
-    },
-    {
-      "name": "creationDateTime",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    },
-    {
-      "name": "sendingDateTime",
-      "type": [
-        "null",
-        "string"
-      ],
-      "default": null
-    }
+    { "name": "notificationId", "type": "string" },
+    { "name": "destination", "type": "string" },
+    { "name": "subject", "type": [ "null", "string" ], "default": null },
+    { "name": "message", "type": "string" },
+    { "name": "creationDate", "type": [ "null", "string" ], "default": null }
   ]
 }

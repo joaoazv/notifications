@@ -25,28 +25,26 @@
         <table class="table table-hover table-responsive-xl">
             <thead class="thead-dark">
             <tr>
-                <th scope="col">Id</th>
                 <th scope="col">Notification ID</th>
+                <th scope="col">Destination</th>
+                <th scope="col">Subject</th>
+                <th scope="col">Message</th>
                 <th scope="col">Status</th>
                 <th scope="col">Creation Date</th>
-                <th scope="col">Sending Date</th>
-                <!--<th scope="col">Actions</th>-->
+                <th scope="col">Status Date</th>
+                <th scope="col">Status Message</th>
             </tr>
             </thead>
             <tbody>
             <tr th:each="notif : ${notifications}">
-                <th scope="row">[[${notif.id}]]</th>
-                <td>[[${notif.notificationId}]]</td>
+                <th scope="row">[[${notif.notificationId}]]</th>
+                <td>[[${notif.destination}]]</td>
+                <td>[[${notif.subject}]]</td>
+                <td>[[${notif.message}]]</td>
                 <td>[[${notif.status}]]</td>
-                <td>[[${notif.creationDateTime}]]</td>
-                <td>[[${notif.sendingDateTime}]]</td>
-                <!--<td>
-                    <a th:href="@{'/tutorials/' + ${tutorial.id}}" title="Edit this tutorial"
-                       class="fa-regular fa-pen-to-square icon-dark"></a>
-
-                    <a th:href="@{'/tutorials/delete/' + ${tutorial.id}}" th:tutorialTitle="${tutorial.title}" id="btnDelete"
-                       title="Delete this tutorial" class="fa-regular fa-trash-can icon-dark btn-delete"></a>
-                </td>-->
+                <td>[[${notif.creationDate}]]</td>
+                <td>[[${notif.statusDate}]]</td>
+                <td>[[${notif.statusMessage}]]</td>
             </tr>
             </tbody>
         </table>

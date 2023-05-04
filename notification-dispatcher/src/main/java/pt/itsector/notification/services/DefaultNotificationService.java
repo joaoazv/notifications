@@ -52,7 +52,7 @@ public class DefaultNotificationService {
     }
 
     public void sendResult(String notificationId, Status status, String statusMessage) {
-        AvroNotificationResult avroNotificationResult = NotificationResultMapper.mapToAvroNotificationResult(notificationId, status, statusMessage);
+        AvroNotificationResult avroNotificationResult = NotificationResultMapper.mapToAvro(notificationId, status, statusMessage);
 
         kafkaProducer.sendMessage(avroNotificationResult);
     }

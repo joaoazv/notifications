@@ -17,7 +17,7 @@ public class DefaultNotificationService implements NotificationService {
 
     @Override
     public String sendNotification(NotificationRequest request) {
-        AvroNotification avroNotification = NotificationMapper.mapToAvroNotification(UUID.randomUUID().toString(), request);
+        AvroNotification avroNotification = NotificationMapper.mapToAvro(UUID.randomUUID().toString(), request);
 
         kafkaProducer.sendMessage(avroNotification);
 

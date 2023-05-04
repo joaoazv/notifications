@@ -8,9 +8,10 @@ spring:
     bootstrap-servers: localhost:9092
     producer:
       key-serializer: org.apache.kafka.common.serialization.StringSerializer
-      value-serializer: pt.itsector.notification.mappers.AvroSerializer
+      value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
       topic-name: notification-service
-
+    properties:
+      schema.registry.url: http://localhost:8081
 ---
 
 spring:
