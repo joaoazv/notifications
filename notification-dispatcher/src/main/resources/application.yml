@@ -18,10 +18,3 @@ spring:
     properties:
       schema.registry.url: http://localhost:8081
       specific.avro.reader: true
-
----
-
-spring:
-  profiles: dev
-  kafka:
-    bootstrap-servers: kafka:29092

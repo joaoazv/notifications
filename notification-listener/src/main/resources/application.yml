@@ -12,9 +12,3 @@ spring:
       topic-name: notification-service
     properties:
       schema.registry.url: http://localhost:8081
----
-
-spring:
-  profiles: dev
-  kafka:
-    bootstrap-servers: kafka:29092

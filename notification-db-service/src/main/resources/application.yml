@@ -30,12 +30,3 @@ spring:
 
 server:
   port : 8082
-
----
-
-spring:
-  profiles: dev
-  kafka:
-    bootstrap-servers: kafka:29092
-  datasource:
-    url: jdbc:mysql://db:3306/notifications_db
