@@ -1,6 +1,8 @@
 # Notifications
 The goal of this project is to create a system that sends notifications to users based on certain events. The system will consist of several components:
 
+[![](https://mermaid.ink/img/pako:eNqFkU9LxDAQxb9KmIMobBb02IOn3sST3poi02Rqg21SJpMVWfa7Gy3-2bWscxrmPd784O3BRkdQQT_GVzsgi3qsTVBlUu6eGedB3WH_gsstRPG9tyg-Bj36JBSI9VbhjqPa6lslcfb2ummOjIl45y217RJy3qN0iTmSXPelqosTxacZxQ7EK3g_4h_Am5PnTCmPssr5n_Uc7hJDwa3Rfbu01r-VJ9c1lzUKdpjoqoUNTMQTeldK2n8EGZCBJjJQldVRj4XHgAmHYsUs8eEtWKiEM20gzw6Fao-lyQmqHsdUruS8RL5fiv_s__AOV5m4WQ?type=png)](https://mermaid.live/edit#pako:eNqFkU9LxDAQxb9KmIMobBb02IOn3sST3poi02Rqg21SJpMVWfa7Gy3-2bWscxrmPd784O3BRkdQQT_GVzsgi3qsTVBlUu6eGedB3WH_gsstRPG9tyg-Bj36JBSI9VbhjqPa6lslcfb2ummOjIl45y217RJy3qN0iTmSXPelqosTxacZxQ7EK3g_4h_Am5PnTCmPssr5n_Uc7hJDwa3Rfbu01r-VJ9c1lzUKdpjoqoUNTMQTeldK2n8EGZCBJjJQldVRj4XHgAmHYsUs8eEtWKiEM20gzw6Fao-lyQmqHsdUruS8RL5fiv_s__AOV5m4WQ)
+
 * Kafka: a distributed streaming platform that will be used as a messaging system to pass messages between components.
 * Database: a storage system that will be used to store user information, event information, and notification information.
 * Multiple Spring Boot projects: this projects will contain the business logic for the notification system. 
